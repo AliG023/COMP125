@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <!-- Alastair Graham - 301483649 -->
+    <title>Employment / Job Application</title>
+  </head>
+  <body>
+    <header>
+      <h1>EMPLOYMENT / JOB APPLICATION</h1>
+    </header>
+    <main>
+      <form action="submit.php" method="post">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <div class="input-group">
+            <div class="input-item">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="input-item">
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" required />
+            </div>
+          </div>
+          <div class="input-group">
+            <div class="input-item">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="input-item">
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="^\d{3}-\d{3}-\d{4}$"
+                placeholder="123-456-7890"
+                required
+              />
+            </div>
+          </div>
+          <label for="address">Address:</label>
+          <input type="text" id="address" name="address" required />
+          <label for="city">City:</label>
+          <input type="text" id="city" name="city" required />
+          <label for="state">State:</label>
+          <input type="text" id="state" name="state" required />
+          <label for="zip">Zip:</label>
+          <input type="text" id="zip" name="zip" required />
+          <label for="SIN">Social Insurance Number:</label>
+          <input type="text" id="SIN" name="SIN" />
+          <div class="input-group">
+            <label for="Position">Position:</label>
+            <input type="text" id="Position" name="Position" required />
+            <label for="salary">Desired Salary:</label>
+            <input type="text" id="salary" name="salary" />
+            <label for="Start">Start Date:</label>
+            <input type="date" id="Start" name="Start" required />
+          </div>
+          <div class="employment-type">
+            <label for="type">Employment Type:</label>
+            <input
+              type="radio"
+              id="full-time"
+              name="type"
+              value="full-time"
+              required
+            />
+            <label for="full-time">Full Time</label>
+            <input
+              type="radio"
+              id="part-time"
+              name="type"
+              value="part-time"
+              required
+            />
+            <label for="part-time">Part Time</label>
+            <input
+              type="radio"
+              id="contract"
+              name="type"
+              value="contract"
+              required
+            />
+            <label for="contract">Contract</label>
+            <input
+              type="radio"
+              id="temporary"
+              name="type"
+              value="temporary"
+              required
+            />
+            <label for="temporary">Temporary</label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Employment Eligibility</legend>
+          <div class="input-group">
+            <label for="citizen">Are You A Canadian Citizen?</label>
+            <div id="radio-group">
+              <input
+                type="radio"
+                id="citizen-yes"
+                name="citizen"
+                value="yes"
+                required
+              />
+              <label for="citizen-yes">Yes</label>
+              <input
+                type="radio"
+                id="citizen-no"
+                name="citizen"
+                value="no"
+                required
+              />
+              <label for="citizen-no">No</label>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="work"
+              >Are You Legally Eligible To Work In Canada?</label
+            >
+            <div id="radio-group">
+              <input
+                type="radio"
+                id="work-yes"
+                name="work"
+                value="yes"
+                required
+              />
+              <label for="work-yes">Yes</label>
+              <input
+                type="radio"
+                id="work-no"
+                name="work"
+                value="no"
+                required
+              />
+              <label for="work-no">No</label>
+            </div>
+          </div>
+          <div class="input-group">
+            <label for="previous-work"
+              >Have You Ever Worked For This Employer Before</label
+            >
+            <div id="radio-group">
+              <input
+                type="radio"
+                id="previous-work-yes"
+                name="previous-work"
+                value="yes"
+                required
+              />
+              <label for="previous-work-yes">Yes</label>
+              <input
+                type="radio"
+                id="previous-work-no"
+                name="previous-work"
+                value="no"
+                required
+              />
+              <label for="previous-work-no">No</label>
+            </div>
+          </div>
+          <div id="explanation-container-1" style="display: none">
+            <label for="explain-1">You Answered Yes, Please Explain:</label>
+            <input type="text" id="explain-1" name="explain-1" />
+          </div>
+          <div class="input-group">
+            <label for="convicted"
+              >Have You Ever Been Convicted Of A Felony?</label
+            >
+            <div id="radio-group">
+              <input
+                type="radio"
+                id="convicted-yes"
+                name="convicted"
+                value="yes"
+                required
+              />
+              <label for="convicted-yes">Yes</label>
+              <input
+                type="radio"
+                id="convicted-no"
+                name="convicted"
+                value="no"
+                required
+              />
+              <label for="convicted-no">No</label>
+            </div>
+          </div>
+          <div id="explanation-container-2" style="display: none">
+            <label for="explain-2">You Answered Yes, Please Explain:</label>
+            <input type="text" id="explain-2" name="explain-2" />
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>Education Information</legend>
+          <div id="education-container">
+            <div class="education-field">
+              <label for="education"><strong>Education:</strong></label>
+              <select id="education" name="education" required>
+                <option value="none">None</option>
+                <option value="1">High School</option>
+                <option value="2">College</option>
+                <option value="3">University (Degree)</option>
+                <option value="4">University (Masters)</option>
+              </select>
+              <label for="school">School:</label>
+              <input type="text" id="school" name="school" required />
+              <label for="major">Major:</label>
+              <input type="text" id="major" name="major" required />
+              <label for="graduation">Graduation Date:</label>
+              <input type="date" id="graduation" name="graduation" required />
+            </div>
+          </div>
+          <div id="add-button">
+            <button type="button" id="add-education">
+              Add Another Education
+            </button>
+          </div>
+        </fieldset>
+        <div class="buttons">
+          <div>
+            <input type="submit" name="submit" value="Apply" id="apply" />
+          </div>
+          <div>
+            <input type="reset" name="clear" value="Clear" id="clear" />
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+  <footer>
+    <p>&copy; Alastair Graham - 301483649 - COMP125 - Assignment 3</p>
+  </footer>
+</html>
