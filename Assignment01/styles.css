@@ -1,0 +1,74 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: gray;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+td {
+    border: 2px solid black;
+    padding: 8px;
+}
+
+tr:nth-child(even){
+    background-color: rgb(201, 201, 201);
+}
+
+tr:nth-child(odd){
+    background-color: rgb(173, 173, 173);
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    margin-left: 20px;
+    border: none;
+    border-radius: 5px;
+    border: outset;
+}
+
+button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    margin-top: 100px;
+}
+
+/* IDs */
+
+input#rows {
+    height: 30px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+input#columns{
+    height: 30px;
+    width: 50px;
+    border: 2px solid black;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#tableContainer {
+    text-align: center;
+}
+
+/* CLASS */
+
+.creator {
+    text-align: center;
+}
