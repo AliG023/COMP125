@@ -9,95 +9,99 @@
   </head>
   <body>
     <h1>Checkers</h1>
-    <div class="containers">
-        <div id="blackDiscContainer" class="disc-container">
-            <div class="draggable black-disc" draggable="true" id="blackDisc1"></div>
-            <div class="draggable black-disc" draggable="true" id="blackDisc2"></div>
-            <div class="draggable black-disc" draggable="true" id="blackDisc3"></div>
-            <div class="draggable black-disc" draggable="true" id="blackDisc4"></div>
-            <div class="draggable black-disc" draggable="true" id="blackDisc5"></div>
-            <div class="draggable black-disc" draggable="true" id="blackDisc6"></div>
-            <div class="draggable black-disc" draggable="true" id="blackDisc7"></div>
+    <div class="game">
+        <div class="containers">
+            <div id="whiteDiscContainer" class="disc-container">
+                <div class="draggable white-disc" draggable="true" id="whiteDisc1"></div>
+                <div class="draggable white-disc" draggable="true" id="whiteDisc2"></div>
+                <div class="draggable white-disc" draggable="true" id="whiteDisc3"></div>
+                <div class="draggable white-disc" draggable="true" id="whiteDisc4"></div>
+                <div class="draggable white-disc" draggable="true" id="whiteDisc5"></div>
+                <div class="draggable white-disc" draggable="true" id="whiteDisc6"></div>
+                <div class="draggable white-disc" draggable="true" id="whiteDisc7"></div>
+            </div>
         </div>
-        <div id="whiteDiscContainer" class="disc-container">
-            <div class="draggable white-disc" draggable="true" id="whiteDisc1"></div>
-            <div class="draggable white-disc" draggable="true" id="whiteDisc2"></div>
-            <div class="draggable white-disc" draggable="true" id="whiteDisc3"></div>
-            <div class="draggable white-disc" draggable="true" id="whiteDisc4"></div>
-            <div class="draggable white-disc" draggable="true" id="whiteDisc5"></div>
-            <div class="draggable white-disc" draggable="true" id="whiteDisc6"></div>
-            <div class="draggable white-disc" draggable="true" id="whiteDisc7"></div>
+        <div class="board">
+            <div class="trash">
+                <div class="trash-box">TRASH</div>
+            </div>
+            <div class="row">
+                <div class="black-box""></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+            </div>
+            <div class="row">
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+            </div>
+            <div class="row">
+                <div class="black-box""></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+            </div>
+            <div class="row">
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+            </div>
+            <div class="row">
+                <div class="black-box""></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+            </div>
+            <div class="row">
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+            </div>
+            <div class="row">
+                <div class="black-box""></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+                <div class="white-box"></div>
+                <div class="black-box"></div>
+            </div>
         </div>
+        <div class="containers">
+            <div id="blackDiscContainer" class="disc-container">
+                <div class="draggable black-disc" draggable="true" id="blackDisc1"></div>
+                <div class="draggable black-disc" draggable="true" id="blackDisc2"></div>
+                <div class="draggable black-disc" draggable="true" id="blackDisc3"></div>
+                <div class="draggable black-disc" draggable="true" id="blackDisc4"></div>
+                <div class="draggable black-disc" draggable="true" id="blackDisc5"></div>
+                <div class="draggable black-disc" draggable="true" id="blackDisc6"></div>
+                <div class="draggable black-disc" draggable="true" id="blackDisc7"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
     </div>
-    <div class="board">
-        <div class="trash">
-            <div class="trash-box">TRASH</div>
-        </div>
-        <div class="row">
-            <div class="black-box""></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-        </div>
-        <div class="row">
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-        </div>
-        <div class="row">
-            <div class="black-box""></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-        </div>
-        <div class="row">
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-        </div>
-        <div class="row">
-            <div class="black-box""></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-        </div>
-        <div class="row">
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-        </div>
-        <div class="row">
-            <div class="black-box""></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-            <div class="white-box"></div>
-            <div class="black-box"></div>
-        </div>
-    </div>
-    <script src="script.js"></script>
   </body>
   <footer>
     <p>© Alastair Graham - 301483649 - COMP125 - Assignment 4</p>

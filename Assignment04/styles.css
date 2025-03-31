@@ -9,9 +9,13 @@ body {
 
 h1 {
   font-size: 46px;
-  margin: 5px;
+  margin: 10px;
 }
 
+.game {
+  display: flex;
+  flex-direction: row;
+}
 .board {
   display: flex;
   flex-direction: column;
@@ -59,7 +63,8 @@ h1 {
 
 .containers {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .disc-container {
