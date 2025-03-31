@@ -1,0 +1,84 @@
+body {
+    color:#7C6A0A; 
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+h2 {
+    text-decoration: underline;
+}
+
+button {
+    border: outset;
+    border-radius: 10px;
+    height: 40px;
+    background-color: #EB6424;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: antiquewhite;
+    color: #EB6424;
+    border: 2px solid #EB6424;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+}
+
+#courseList li {
+    list-style: square;
+}
+
+#careerMission li {
+    list-style-type: circle;
+}
+
+#image {
+    display: flex;
+    width: 400px;
+    height: auto;
+    margin-left: 40px;
+    mask-image: radial-gradient(circle, transparent, black 0%, black 50%, transparent);
+}
+
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lists {
+    flex: 1;
+    text-align: center;
+}
+
+.courses {
+    margin-left: 30px;
+}
+
+.missions {
+    margin-left: 30px;
+}
+
+.skills {
+    margin-left: 30px;
+}
+
+.color-swap {
+    color: red;
+}
