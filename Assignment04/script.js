@@ -42,7 +42,7 @@ boxes.forEach((box) => {
         const isDiscTrash = box.classList.contains('trash-box');
 
 
-        if ((isBlackDisc && isBlackBox) || (isWhiteDisc && isWhiteBox)) {
+        if ((isBlackDisc && isBlackBox) || (isWhiteDisc && isBlackBox)) {
             if (box.children.length === 0) {
                 box.appendChild(draggableElement);
                 originalPositions.set(draggableId, box);
